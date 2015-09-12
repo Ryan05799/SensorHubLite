@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/devName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/connStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/devName" />
+
+    <TextView
+        android:id="@+id/BatteryLevelTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/connStatus"
+        android:text="Battery Level" />
+
+    <TextView
+        android:id="@+id/batteryLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BatteryLevelTag"
+        android:layout_alignBottom="@+id/BatteryLevelTag"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/BatteryLevelTag" />
+
+    <TextView
+        android:id="@+id/devReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batteryLevel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:id="@+id/measAcc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dataNumTag" />
+
+    <TextView
+        android:id="@+id/measGyro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/measAcc" />
+
+    <TextView
+        android:id="@+id/dataNumTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BatteryLevelTag"
+        android:text="Receviced data :" />
+
+    <TextView
+        android:id="@+id/dataNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dataNumTag"
+        android:layout_toRightOf="@+id/devName" />
+
+    <TextView
+        android:id="@+id/disconnCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/devReady"
+        android:layout_alignBottom="@+id/devReady"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/devReady" />
+
+</RelativeLayout>
